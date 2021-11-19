@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #5b67db;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.card {
+  background-color: white;
+  width: 650px;
+  height: 300px;
+  padding: 1.5rem 5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: space-between;
+}
+
+.card__title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(148, 148, 148);
+  letter-spacing: 1.5px;
+}
+
+.card__content {
+  flex: 1;
+  text-align: center;
+  padding: 0 5rem;
+}
+
+.card__footer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__footer button {
+  background-color: #976adb;
+  border: none;
+  width: 17rem;
+  height: 4rem;
+  border-radius: 8px;
+  color: #f3f3f3;
+  font-weight: 600;
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.card__footer button:hover {
+  opacity: 0.95;
+}
+
+.card__footer button:active {
+  opacity: 1;
+}
