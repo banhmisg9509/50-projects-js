@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a69cf;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.form {
+  width: 350px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #1e41a3;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form h2 {
+  text-align: center;
+  margin: 5px 0;
+}
+
+input[type='number'] {
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.result {
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+.result input:focus {
+  outline: none;
+}
+
+.copyBtn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12%;
+  height: 80%;
+  color: white;
+  background-color: #1e41a3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.copyBtn:active {
+  transform: translateY(-50%) scale(0.98);
+  color: lightgreen;
+}
+
+.submitBtn {
+  color: white;
+  width: 100%;
+  padding: 8px;
+  background-color: #1a69cf;
+  font-family: inherit;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
+.passwordDisplay {
+  width: 100%;
+  padding: 8px;
+  font-size: 18px;
+  font-family: inherit;
+  background: #183480;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}

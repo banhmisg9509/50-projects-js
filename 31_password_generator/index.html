@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"
+      integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <form class="form" id="generator-form">
+      <h2>Password Generator</h2>
+      <div class="result">
+        <input id="display" type="text" readonly class="passwordDisplay" />
+        <button class='copyBtn' id="copyBtn"><i class="fas fa-copy"></i></button>
+      </div>
+      <div class="form-control">
+        <label for="passwordLength">Password Length</label>
+        <input type="number" name="passwordLength" id="passwordLength" value="8" min="8" max="32" />
+      </div>
+      <div class="form-control">
+        <label for="includeUppercase">Include uppercase letters</label>
+        <input type="checkbox" name="includeUppercase" checked="true" id="includeUppercase" />
+      </div>
+      <div class="form-control">
+        <label for="includeLowercase">Include lowercase letters</label>
+        <input type="checkbox" name="includeLowercase" checked="true" id="includeLowercase" />
+      </div>
+      <div class="form-control">
+        <label for="includeNumbers">Include numbers</label>
+        <input type="checkbox" name="includeNumbers" checked="true" id="includeNumbers" />
+      </div>
+      <div class="form-control">
+        <label for="includeSymbols">Include symbols</label>
+        <input type="checkbox" name="includeSymbols" checked="true"id="includeSymbols" />
+      </div>
+      <input id="submit" class="submitBtn" type="submit" value="Generate Password"></input>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
