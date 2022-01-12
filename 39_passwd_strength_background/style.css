@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.background {
+  background-image: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  z-index: -1;
+  filter: blur(20px);
+}
